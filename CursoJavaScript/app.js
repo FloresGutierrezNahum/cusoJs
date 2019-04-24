@@ -50,3 +50,56 @@ console.log(tecnologia.repeat(10));
 
 
 */
+
+/*
+//Manejo de Números
+
+const num1 = 30;
+const num2 = 20;
+const num3 = 20.20;
+const num4 = .1020;
+const num5 = -3;
+
+let resultado;
+resultado = num1 + num2;
+
+//Libreria Math
+resultado = Math.PI;
+
+//Min
+resultado = Math.min(1, 2, 3, 4, 5, 6, 7, 8);
+
+console.log(resultado);
+
+let puntaje;
+
+console.log(puntaje);
+
+*/
+
+//Las variables pueden tener distintos valores
+let valor;
+//Variables primitivas
+
+valor = 'cadena de texto'
+valor = 20;
+valor = true;
+valor = null;
+//valor = undefined;
+//valor = { nombre: 'Juan' }
+console.log(valor);
+
+//Variables de referencia
+
+//Symbol
+valor = Symbol('Simbolo');
+//Arreglo 
+valor = [1, 2, 3, 4];
+//Objetos
+valor = {
+        nombre: 'Juan',
+        edad: 20
+    }
+    //Fecha
+valor
+console.log(typeof valor);
