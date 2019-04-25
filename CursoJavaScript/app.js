@@ -150,7 +150,11 @@ console.log(typeof dato);
 
 */
 
+
+
 //Template Literals o String Template
+
+/*
 const producto1 = 'Pizza',
     precio1 = 30,
     producto2 = 'Hamburguesa',
@@ -159,7 +163,7 @@ const producto1 = 'Pizza',
 let html;
 
 //Forma antigua de crear un template
-/*
+
 html = '<ul>' +
     '<li>Orden: ' + producto1 + '</li>' +
     '<li>Precio: ' + precio1 + '</li>' +
@@ -167,7 +171,7 @@ html = '<ul>' +
     '<li>Precio: ' + precio2 + '</li>' +
     '<li>Total: ' + (precio1 + precio2) + '</li>' +
     '</ul>';
-*/
+
 //Forma moderna
 
 html = `
@@ -185,3 +189,63 @@ function total(precio1, precio2) {
 }
 
 document.getElementById('app').innerHTML = html;
+*/
+
+//Forma antigua
+const numeros = [10, 20, 30, 40, 50];
+console.log(numeros);
+
+//Forma moderna
+const meses = new Array('enero', 'febrero', 'marzo', 'Abril');
+console.log(meses);
+
+const mezclado = ['Hola', 20, true, null, false, undefined];
+console.log(mezclado);
+console.log(meses.length);
+console.log(Array.isArray(meses));
+
+meses[4] = 'Mayo';
+meses.push('Junio');
+
+console.log(meses[5]);
+
+//Encontrar un elemento en el arreglo
+console.log(meses.indexOf('Abril'));
+
+//Añadir al inicio del arreglo
+meses.unshift('Mes 0');
+
+//Eliminar un elemento de un arreglo
+meses.pop();
+
+//Eliminar un elemento del arreglo (el primero)
+meses.shift();
+
+//Quitar un rango
+meses.splice(2, 1); //quitar del segundo a mas
+
+//Invertir el orden
+meses.reverse();
+
+console.log(meses);
+
+let arreglo1 = [1, 2, 3],
+    arreglo2 = [9, 8, 7];
+
+console.log(arreglo1.concat(arreglo2));
+
+//Ordenar un arreglo
+const frutas = ['Platano', 'Manzana', 'Fresa', 'Naranja', 'Zanaoria'];
+
+frutas.sort();
+console.log(frutas);
+
+arreglo1 = [3, 9, 12, 43, 5, 656, 767, 898, 65, 776, 8];
+//arreglo1.sort();
+
+arreglo1.sort(function(x, y) {
+    return x - y; //y-x --> decreciente
+})
+
+
+console.log(arreglo1);
