@@ -318,6 +318,7 @@ for (let i = 0; i < autos.length; i++) {
 
 //Funciones de JavaScript
 
+/*
 //Function declaration
 function saludar(nombre) {
     console.log('Hola');
@@ -400,3 +401,92 @@ musica.borrar = function(id) {
 musica.reproducir(30);
 musica.pausar();
 musica.borrar(2);
+*/
+
+//Manejo de errores con TryCatch
+/*
+obtenerClientes();
+
+try {
+    algo();
+} catch (error) {
+    console.log(error);
+} finally {
+    console.log('Se ejecuta de todos modos');
+}
+
+obtenerClientes();
+
+function obtenerClientes() {
+    console.log('Descargando...');
+
+    setTimeout(function() {
+        console.log('Completo');
+    }, 3000);
+}
+*/
+/*
+//Manejo de fechas Js
+const diaHoy = new Date();
+
+let navidad2017 = new Date('12-25-2017');
+
+console.log(diaHoy);
+console.log(navidad2017);
+
+//ver metodos para obtener datos de un date
+//getF... set --> ver get y set de fechas
+*/
+
+//Condicional en una sola linea
+/*
+const logueado = true;
+
+console.log(logueado === true ? 'Si logueado' : 'No logueado');
+*/
+
+
+/*
+const pendientes = ['Tarea', 'Comer', 'Proyecto', 'Aprender Js'];
+
+for (let i = 0; i < pendientes.length; i++) {
+    //console.log(pendientes[i]);
+
+}
+
+pendientes.forEach(function(pendiente, index) {
+    console.log(`${index} : ${pendiente}`);
+});
+
+console.log(pendientes);
+
+//Map para recorrer un arreglo de objetos
+
+const carrito = [
+    { id: 1, producto: 'libro1' },
+    { id: 2, producto: 'libro2' },
+    { id: 3, producto: 'libro3' },
+    { id: 4, producto: 'libro4' },
+];
+
+const nombreProducto = carrito.map(function(carrito) {
+    return carrito.producto;
+});
+
+console.log(nombreProducto);
+
+//Imprimir un objeto con ubn for
+
+const automovil = {
+    modelo: 'camaro',
+    motor: 6.1,
+    anio: 1969,
+    marca: 'Chevrolet',
+}
+
+for (let auto in automovil) {
+    console.log(`${auto} : ${automovil[auto]}`);
+}
+*/
+
+//Ver metodos de windowObject
