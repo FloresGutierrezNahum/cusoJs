@@ -191,6 +191,7 @@ function total(precio1, precio2) {
 document.getElementById('app').innerHTML = html;
 */
 
+/*
 //Forma antigua
 const numeros = [10, 20, 30, 40, 50];
 console.log(numeros);
@@ -249,3 +250,11 @@ arreglo1.sort(function(x, y) {
 
 
 console.log(arreglo1);
+*/
+
+const numeros = [1, 2, 3];
+
+numeros[0] = 4;
+numeros.push(5);
+
+console.log(numeros);
