@@ -77,6 +77,8 @@ console.log(puntaje);
 
 */
 
+/*
+
 //Las variables pueden tener distintos valores
 let valor;
 //Variables primitivas
@@ -103,3 +105,83 @@ valor = {
     //Fecha
 valor
 console.log(typeof valor);
+
+*/
+/*
+const num1 = "50",
+    num2 = 10,
+    num3 = 'tres';
+
+//console.log(Number(num1));
+//console.log(parseInt(num1));
+//parserInt - parseFloat
+
+//toFixed
+var dato = 10101.4154545
+dato = '12312312.3131'
+console.log(parseInt(dato).toFixed(1)); //Lo q va en los parentesis son los decimales
+
+//Comparador == --> comparador mas estricto ===
+
+*/
+
+/*
+//Convertir number a string
+let cp;
+
+cp = 90210;
+cp = String(cp);
+
+console.log(cp.length);
+
+let dato;
+
+dato = true;
+
+dato = String(dato);
+
+//Js moderno
+dato = 20;
+dato = dato.toString();
+
+console.log(dato);
+console.log(dato.length);
+console.log(typeof dato);
+
+*/
+
+//Template Literals o String Template
+const producto1 = 'Pizza',
+    precio1 = 30,
+    producto2 = 'Hamburguesa',
+    precio2 = 40;
+
+let html;
+
+//Forma antigua de crear un template
+/*
+html = '<ul>' +
+    '<li>Orden: ' + producto1 + '</li>' +
+    '<li>Precio: ' + precio1 + '</li>' +
+    '<li>Orden: ' + producto2 + '</li>' +
+    '<li>Precio: ' + precio2 + '</li>' +
+    '<li>Total: ' + (precio1 + precio2) + '</li>' +
+    '</ul>';
+*/
+//Forma moderna
+
+html = `
+        <ul>
+            <li>Orden: ${producto1} </li>
+            <li>Orden: ${precio1} </li>
+            <li>Orden: ${producto2} </li>
+            <li>Orden: ${precio2} </li>
+            <li>Orden: ${total(precio1,precio2)} </li>
+        </ul>
+       `;
+
+function total(precio1, precio2) {
+    return precio1 + precio2;
+}
+
+document.getElementById('app').innerHTML = html;
