@@ -251,10 +251,152 @@ arreglo1.sort(function(x, y) {
 
 console.log(arreglo1);
 */
-
+/*
 const numeros = [1, 2, 3];
 
 numeros[0] = 4;
 numeros.push(5);
 
 console.log(numeros);
+*/
+
+/*
+//Crear Objetos
+const persona = {
+    nombre: 'Miguel',
+    apellido: 'Martinez',
+    profesion: 'Disen',
+    email: 'Correo@correo.com',
+    edad: 20,
+    musica: ['Trance', 'Rock', 'Grunge'],
+
+    hogar: {
+        ciudad: 'Guadalajara',
+        pais: 'Mexico'
+    },
+    //Una funcion dentro de un arreglo se le llama metodo
+    nacimiento: function() {
+        return new Date().getFullYear() - this.edad;
+    }
+}
+
+
+const persona2 = {
+    nombre: 'Miguel',
+    apellido: 'Martinez',
+    profesion: 'Disen',
+    email: 'Correo@correo.com',
+    edad: 19,
+    musica: ['Trance', 'Rock', 'Grunge'],
+
+    hogar: {
+        ciudad: 'Guadalajara',
+        pais: 'Mexico'
+    },
+    //Una funcion dentro de un arreglo se le llama metodo
+    nacimiento: function() {
+        return new Date().getFullYear() - this.edad;
+    }
+}
+persona.musica.push('Alternativo');
+console.log(persona.musica);
+console.log(persona.hogar.ciudad);
+console.log(persona2.nacimiento());
+*/
+/*
+//Arreglo de objetos
+const autos = [
+    { modelo: 'Munstang', motor: 6.2 },
+    { modelo: 'Camaro', motor: 6.1 },
+    { modelo: 'Challenger', motor: 6.3 },
+];
+
+for (let i = 0; i < autos.length; i++) {
+    console.log(`${autos[i].modelo} ${autos[i].motor}`);
+}
+*/
+
+//Funciones de JavaScript
+
+//Function declaration
+function saludar(nombre) {
+    console.log('Hola');
+    console.log(`Hola ${nombre}`);
+}
+
+saludar('Alma');
+
+function sumar(a, b) {
+    return a + b;
+}
+
+let suma;
+
+suma = sumar(1, 2);
+console.log(suma);
+
+//Forma antigua
+function saludar2(nombre) {
+    if (typeof nombre === 'undefined') {
+        nombre = 'Visitante';
+    }
+    return `hola ${nombre}`;
+}
+
+let saludo;
+saludo = saludar2("Alia");
+console.log(saludo);
+
+//Forma nueva
+function saludar3(nombre = 'Visitante') {
+    return `holasss ${nombre}`;
+}
+let saludo3;
+saludo3 = saludar3();
+
+console.log(saludo3);
+
+//Function expression
+const sumaExp = function(a = 3, b = 4) {
+    return a + b;
+}
+
+console.log(sumaExp(1, 2));
+console.log(sumaExp(5));
+
+const saludar4 = function(nombre = `Visitante`) {
+    return `hola ${nombre}`
+}
+
+console.log(saludar4());
+
+const saludar5 = function(nombre = `Visitante`, edad = 20, trabajo = 'des') {
+    return `hola, tienes ${edad}, profesion ${trabajo} y te llamas ${nombre}`
+}
+
+console.log(saludar5('Juan'));
+
+//Funciones IIFE
+(function(tecnologia) {
+    console.log(`Creando un IIFE --> Aprendiendo ${tecnologia}`);
+})('JavaScript');
+
+//Metodos de propiedad
+//Cuando una función se pone dentro de un objeto
+const musica = {
+    reproducir: function(id) {
+        console.log(`Reproducir musica ${id}`);
+    },
+    pausar: function() {
+        console.log(`Pausar musica`);
+    }
+}
+
+//Los metodos tambien pueden agregarse/crearse fuera del objeto
+musica.borrar = function(id) {
+    console.log(`Borrando la cacion con id:  ${id}`);
+}
+
+musica.reproducir(30);
+musica.pausar();
+musica.borrar(2);
