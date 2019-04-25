@@ -490,3 +490,5 @@ for (let auto in automovil) {
 */
 
 //Ver metodos de windowObject
+
+//Scopes
