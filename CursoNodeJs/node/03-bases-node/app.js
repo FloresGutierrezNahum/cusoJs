@@ -2,7 +2,7 @@
 //con destructuración
 
 const argv = require('./config/yargs').argv;
-const colors = require('colors');
+const colors = require('colors/safe');
 
 const { crearArchivo, listarTabla } = require('./multiplicar/multiplicar');
 

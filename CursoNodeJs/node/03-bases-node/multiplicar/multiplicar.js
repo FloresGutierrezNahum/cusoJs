@@ -2,7 +2,7 @@
 //const fs = require('express');
 //const fs = require('./fs');
 const fs = require('fs');
-const colors = require('colors/safe');
+const colors = require('colors');
 
 let listarTabla = (base, limite = 10) => {
     console.log('================'.green);
